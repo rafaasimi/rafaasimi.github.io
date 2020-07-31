@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_46" data-name="Retângulo 46" width="45" height="45" transform="translate(1453 3315)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="telegram" transform="translate(-1453 -3315)" clip-path="url(#clip-path)">
+    <g id="telegram-2" data-name="telegram" transform="translate(1453 3315)">
+      <rect id="Retângulo_47" data-name="Retângulo 47" width="45" height="45" rx="6.75" fill="#303030"/>
+      <path id="Caminho_134" data-name="Caminho 134" d="M17.49,35.508c-.967,0-.879-.352-1.143-1.23l-2.812-9.229L35.068,12.393" fill="#c8daea"/>
+      <path id="Caminho_135" data-name="Caminho 135" d="M17.49,35.508a2.17,2.17,0,0,0,1.406-.7l3.955-3.779L17.93,28.037" fill="#a9c9dd"/>
+      <path id="Caminho_136" data-name="Caminho 136" d="M17.93,28.037l11.865,8.7c1.23.791,2.285.352,2.637-1.23l4.834-22.676c.439-1.934-.791-2.812-2.109-2.2L6.943,21.533c-1.846.7-1.846,1.846-.352,2.285L13.887,26.1l16.7-10.635c.791-.439,1.494-.264.967.352" fill="#f6fbfe"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_38" data-name="Retângulo 38" width="45" height="45" transform="translate(675 3345)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_5" data-name="Grupo de máscara 5" transform="translate(-675 -3345)" clip-path="url(#clip-path)">
+    <g id="codepen" transform="translate(675 3345)">
+      <rect id="Retângulo_44" data-name="Retângulo 44" width="45" height="45" rx="6.75" fill="#303030"/>
+      <g id="Grupo_2" data-name="Grupo 2">
+        <path id="Caminho_130" data-name="Caminho 130" d="M7.119,17.4V27.6L22.5,37.881,37.881,27.6V17.4L22.5,7.119Z" fill="none" stroke="#e6e6e6" stroke-linejoin="round" stroke-width="2.9"/>
+        <path id="Caminho_131" data-name="Caminho 131" d="M7.119,17.4,22.5,27.6,37.881,17.4M22.5,7.119V17.4" fill="none" stroke="#e6e6e6" stroke-linejoin="round" stroke-width="2.9"/>
+        <path id="Caminho_132" data-name="Caminho 132" d="M7.119,27.6,22.5,17.4,37.881,27.6M22.5,37.881V27.6" fill="none" stroke="#e6e6e6" stroke-linejoin="round" stroke-width="2.9"/>
+      </g>
+    </g>
+  </g>
+</svg>
