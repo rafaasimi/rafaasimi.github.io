@@ -12,6 +12,7 @@
 
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- Ícones -->
@@ -20,25 +21,66 @@
 
 <body>
 
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="/">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="#sobre">
+                    <span class="icon"><i class="fas fa-address-card"></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projetos">
+                    <span class="icon"><i class="fas fa-briefcase"></i></span>
+                    <span class="title">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:rafaasimi@hotmail.com">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <span class="title">Contato</span>
+                </a>
+            </li>
+            <span class="divisor"></span>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/rafaelzorzenon" target="_blank">
+                    <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                    <span class="title">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/rafaasimi" target="_blank">
+                    <span class="icon"><i class="fab fa-github-alt"></i></span>
+                    <span class="title">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/5519996837111" target="_blank">
+                    <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                    <span class="title">Whatsapp</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/rafaasimi" target="_blank">
+                    <span class="icon"><i class="fab fa-telegram-plane"></i></span>
+                    <span class="title">Telegram</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+
     <main class="principal">
-        <header class="header">
-            <div class="logo">
-                <a href="#"><img src="/assets/img/logo.svg" alt="Logo Rafael Simionato"></a>
-            </div>
-
-            <nav class="menu-principal" id="menu-principal">
-                <ul>
-                    <li><a href=".">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#footer">Contato</a></li>
-                </ul>
-            </nav>
-
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </header>
 
         <div class="apresentacao">
             <h1>Olá, me chamo Rafael Simionato.</h1>
@@ -62,9 +104,12 @@
             <i>"Bora um CSzinho?"</i></p>
 
         <div class="sobre-sociais">
-            <div class="btn"><a href="https://www.linkedin.com/in/rafaelzorzenon" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-            <div class="btn"><a href="https://github.com/rafaasimi" target="_blank"><i class="fab fa-github"></i></a></div>
-            <div class="btn"><a href="mailto:rafaasimi@hotmail.com" target="_blank"><i class="far fa-envelope"></i></a></div>
+            <div class="btn"><a href="https://www.linkedin.com/in/rafaelzorzenon" target="_blank"><i
+                        class="fab fa-linkedin"></i></a></div>
+            <div class="btn"><a href="https://github.com/rafaasimi" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="btn"><a href="mailto:rafaasimi@hotmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
         </div>
 
         <div class="sobre-call-projetos">
@@ -76,16 +121,19 @@
                 <div class="linguagens">
                     <h3>Linguagens</h3>
                     <ul>
+                        <!-- JS/Content Skills -->
                     </ul>
                 </div>
                 <div class="design">
                     <h3>Design</h3>
                     <ul>
+                        <!-- JS/Content Skills -->
                     </ul>
                 </div>
                 <div class="outros">
                     <h3>Outros</h3>
                     <ul>
+                        <!-- JS/Content Skills -->
                     </ul>
                 </div>
             </div>
@@ -96,44 +144,22 @@
         <h1>aqui estão alguns dos <span>meus projetos</span></h1>
         <div class="lista-projetos container">
             <ul>
-                <!-- <li class="projetos-item">
-                    <h3>Repositório-Nome</h3>
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, lorem ipsum is placeholder text commonly used in the graphic</p>
-                   <div class="btn-projeto"><a href="">Ver projeto <i class="fas fa-angle-right"></i></a></div>
-                </li> -->
+                <!-- JS/Content Skills -->
             </ul>
         </div>
     </section>
 
 
     <footer class="footer" id="footer">
-        <div class="container">
-            <div class="copyright">
+        <div class="copyright">
+            <div>
                 <img src="./assets/img/logo.svg" alt="Logo Rafael Simionato">
-                <p>Alguns direitos reservados &copy; 2020 - Rafael Simionato</p>
             </div>
-            <div class="footer-sociais">
-                <h3>Sociais</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/rafaelzorzenon" target="_blank"><img
-                                src="./assets/img/sociais/linkedin.svg" alt="LinkedIn"></a></li>
-                    <li><a href="https://twitter.com/rafaasimi" target="_blank"><img
-                                src="./assets/img/sociais/twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="https://wa.me/5519996837111" target="_blank"><img
-                                src="./assets/img/sociais/whatsapp.svg" alt="Whatsapp"></a></li>
-                    <li><a href="https://t.me/rafaasimi" target="_blank"><img src="./assets/img/sociais/telegram.svg"
-                                alt="Telegram"></a></li>
-                    <li><a href="https://github.com/rafaasimi" target="_blank"><img
-                                src="./assets/img/sociais/github.svg" alt="GitHub"></a></li>
-                    <li><a href="https://codepen.io/rafaasimi" target="_blank"><img
-                                src="./assets/img/sociais/codepen.svg" alt="CodePen"></a></li>
-                    <li><a href="https://dribbble.com/rafaasimi" target="_blank"><img
-                                src="./assets/img/sociais/dribbble.svg" alt="Dribbble"></a></li>
-                </ul>
+            <div>
+                <p>Alguns direitos reservados &copy; 2020 - <span><a href="https://github.com/rafaasimi" target="_blank">Rafael Simionato</a></span></p>
             </div>
         </div>
     </footer>
-
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/scripts/main.js"></script>

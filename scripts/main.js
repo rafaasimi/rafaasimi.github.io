@@ -1,7 +1,6 @@
-// Menu Hamburguer - Responsivo
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.menu-principal');
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('ativo');
-});
+function toggleMenu() {
+    const navigation = document.querySelector('.navigation');
+    const toggle = document.querySelector('.toggle');
+    navigation.classList.toggle('active');
+    toggle.classList.toggle('active');
+}

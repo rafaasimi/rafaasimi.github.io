@@ -1,7 +1,9 @@
 /* Reset */
-body, h1, h2, h3, ul, li, p, div {
-    margin: 0px;
-    padding: 0px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -10,25 +12,28 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 ul {
     list-style: none;
 }
 
-* {
-    box-sizing: border-box;
-}
 
-/* Configurações */
+
+/* Color Configs */
 :root {
     --cor-primaria: #303030;
     --cor-secundaria: #FFFFFF;
-    --cor-terciaria: #00b0ff;
+    --cor-terciaria: #014675;
 
     --background-terciario: #262626;
     --background-footer: #202020;
+
+
+    --background-primary: #014675;
+    --background-secondary: #00b0ff;
+    --background-tertiary: #003a61;
 }
 
 html {
@@ -36,6 +41,7 @@ html {
     color: var(--cor-primaria);
     scroll-behavior: smooth;
 }
+
 
 .container {
     max-width: 1440px;
@@ -58,62 +64,146 @@ html {
     overflow: hidden;
 }
 
-.header {
+/* MENU */
+.navigation {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background-color: var(--background-primary);
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation:hover, .navigation.active {
+    width: 300px;
+}
+
+.navigation ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover {
+    background-color: var(--background-tertiary);
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
+    text-decoration: none;
+    color: #FFF;
 }
 
-.header .logo img{
-    width: 45px;
-    transition: 0.3s;
-}
-
-.header .logo:hover {
-    transform: translateY(-3px);
-    transition: 0.3s;
-}
-
-.menu-principal ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.menu-principal ul a {
+.navigation ul li a .icon {
+    position: relative;
     display: block;
-    padding: 15px 10px;
-    margin-right: 10px;
-    text-transform: uppercase;
-    color: var(--cor-secundaria);
-    transition: 0.3s;
-    font-size: 1.5em;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
-.menu-principal ul a:hover {
-    transform: translateY(-3px);
-    transition: 0.3s;
+.navigation ul li a .icon .fas {
+    font-size: 24px;
 }
 
-.menu-toggle {
-    color: var(--cor-secundaria);
-    font-size: 1.5rem;
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-primary);
     cursor: pointer;
-    display: none;
 }
+
+.toggle.active {
+    background-color: var(--background-tertiary);
+}
+
+.icon:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+.toggle:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0c9';
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.toggle.active:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f00d';
+    font-weight: 900;
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        left: -60px;
+    }
+    .navigation.active {
+        left: 0px;
+        width: 100%;
+    }
+
+}
+
+.divisor {
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto 10px;
+}
+/* FIM MENU */
 
 .apresentacao {
     color: var(--cor-secundaria);
     text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .apresentacao h1 {
     font-size: 4rem;
     width: 100%;
-    line-height: 85px;
 }
 
 .apresentacao p {
@@ -229,7 +319,7 @@ html {
 /* Habilidades */
 .habilidades {
     background-color: #DCDCDC;
-    padding: 60px;
+    padding: 80px;
     margin: 0 auto;
 }
 
@@ -369,65 +459,91 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    flex: 1;
+    justify-content: center;
 }
 
 .copyright img {
     height: 30px;
-    padding-right: 20px;
+    max-width: 30px;
+    margin-right: 20px;
 }
 
-.footer-sociais {
-    flex: 1;
-}
-
-.footer-sociais ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer-sociais h3 {
-    margin-bottom: 20px;
-}
-
-.footer-sociais ul li + li {
-    margin-left: 20px;
+.copyright a {
+    color: #DCDCDC;
 }
 
 /* MEDIA */
 
-@media (max-width: 991px){
-    .header {
-        padding-left: 30px;
-        padding-right: 30px;
-        justify-content: space-between;
+@media (max-width: 1250px){
+    .sobre {
+        margin: 0 auto;
+        background-image: none;
     }
 
-    .menu-toggle {
-        display: block;
+    .apresentacao h1 {
+        font-size: 3rem;
     }
 
-    .menu-principal {
-        display: none;
+    .apresentacao p {
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media (max-width: 1040px) {
+    .apresentacao h1 {
+        font-size: 2rem;
     }
 
-    nav.ativo {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 100px);
-        background: #333;
-        top: 100px;
-        left: 0;
-        transition: 0.5s;
+    .apresentacao p {
+        font-size: 1rem;
+        max-width: 500px;
     }
+}
 
-    .ativo ul {
-        display: block;
+@media (max-width: 856px) {
+    .lista-linguagens {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .ativo ul li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    .lista-linguagens div + div {
+        margin-top: 30px;
     }
+}
+
+@media (max-width: 710px) {
+    .sobre h1, .projetos h1 {
+        font-size: 2.5rem;
+        max-width: 350px;
+        letter-spacing: -4px;
+        line-height: 40px;
+    }
+
+    .sobre p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .projetos {
+        padding: 0;
+    }
+
+    .projetos h1 {
+        padding-top: 30px;
+        max-width: 350px;
+    }
+
+    .lista-projetos ul li.projetos-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .copyright div + div {
+        text-align: center;
+        max-width: 310px;
+    }
+
 }
