@@ -132,13 +132,14 @@ html {
 }
 
 .toggle {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 60px;
     height: 60px;
     background-color: var(--background-primary);
     cursor: pointer;
+    display: none;
 }
 
 .toggle.active {
@@ -179,6 +180,9 @@ html {
     .navigation.active {
         left: 0px;
         width: 100%;
+    }
+    .toggle {
+        display: block;
     }
 
 }
