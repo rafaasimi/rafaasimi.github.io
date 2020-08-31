@@ -1,5 +1,4 @@
 /* Reset */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +17,6 @@ img {
 ul {
     list-style: none;
 }
-
 
 
 /* Color Configs */
@@ -278,6 +276,11 @@ html {
     background-color: var(--cor-primaria);
     border-radius: 50%;
     line-height: 60px;
+    transition: transform .3s;
+}
+
+.sobre .btn:hover {
+    transform: translateY(-5px);
 }
 
 .sobre .btn + .btn {
@@ -299,11 +302,6 @@ html {
     color: var(--cor-secundaria);
 }
 
-.sobre-call-projetos a {
-    color: var(--cor-secundaria);
-
-}
-
 .sobre-call-projetos {
     width: 250px;
     height: 60px;
@@ -311,13 +309,20 @@ html {
     background-image: linear-gradient(to right, #00B0FF, #0083B0);
     text-align: center;
     border-radius: 4px;
+    transition: transform .3s;
+}
+
+.sobre-call-projetos:hover{
+    transform: scale(1.1);
 }
 
 
 .sobre-call-projetos a {
+    color: var(--cor-secundaria);
     text-transform: uppercase;
     line-height: 60px;
     letter-spacing: -1px;
+    padding: 20px;
 }
 .sobre-call-projetos i {
     margin-right: 15px;
